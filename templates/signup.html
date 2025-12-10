@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/static/static.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Create Account</h2>
+
+        {% if message %}
+        <p class="message">{{ message }}</p>
+        {% endif %}
+
+        <form method="POST">
+            <input type="email" name="email" placeholder="Enter Email" required>
+            <input type="password" name="password" placeholder="Create Password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+
+        <p style="text-align:center;margin-top:10px;">
+            Already registered? <a href="/">Login</a>
+        </p>
+    </div>
+
+</body>
+
+</html>
